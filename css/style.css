@@ -1,0 +1,74 @@
+/* Reset Style Rules */
+HTML, *
+{
+    padding:0;
+    margin:0;
+    border:0;
+    list-style:none;
+    text-decoration:none;
+    z-index: 1;
+}
+/*Class Rules*/
+.button_link
+{
+    width: 12em;
+    height: 4em;
+}
+._Overlay
+{
+    position: fixed; /* Sit on top of the page content */
+    display:none;
+    width:100%;
+    height:100%;
+    background:black;
+    z-index: 5; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*Body Rules*/
+body
+{
+    background:green;
+}
+div:not(._Overlay)
+{
+    margin-bottom:10px;
+}
+section:not(._Footer)
+{
+    background: aqua;
+    margin:auto;
+}
+._Footer
+{
+    background: greenyellow;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+/* Responsive Page Layout Rules */
+/* Mobile Rules*/
+@media screen and (max-width: 750px)
+{
+    /*Grid Layout*/
+    #indexContent
+    {
+        width:80%;
+    }
+
+    /*Index Page Elements*/
+    #indexIntro
+    {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .index_projects
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
