@@ -11,53 +11,51 @@
     <section id="indexContent">
         <!--Nav-->
         <div class = "nav_menu">
-            <img src = "images/ImagePlaceholder-Mobile.png" alt="navigation menu">
+            <button class="nav_button">
+                <img src = "images/ImagePlaceholder-Mobile.png" alt="open navigation menu">
+            </button>
+            <!--insert list of a tag links here-->
         </div>
+        
         <!--Site Map-->
-        <div class = "site_map">
-            <h1>Header 1</h1>
-            <img src="images/SiteMap-Placeholder.png" alt="website map">
+        <div class = "site_map_grid section_end">
+            <div class="mobile_spacer element_end"></div>
+            <div class="header_links_flex">
+                <h1>Header 1</h1>
+                <!--put site map extnesions here-->
+            </div>
+            <img src="images/SiteMap-Placeholder.png" alt="description of banner imagery">
         </div>
         <!--Person Intro-->
-        <div id="indexIntro"> 
-            <img src = "images/ImagePlaceholder.png" alt="Portrait">
+        <div id="indexIntro" class="section_end"> 
+            <img src = "images/ImagePlaceholder.png" alt="Portrait of Franco Ramos">
             <div>
                 <h2>Header2</h2>
                 <p>Bridge the gap between art and technology</p>
             </div>
         </div>
         <!--Induvidual Projects Link-->
-        <div id="indexProjects">
+        <div id="indexProjects" class="section_end">
             <h2>Header2</h2>
-            <div class = index_projects>
-                <div class="overlay_image">
-                    <img src="images/ImagePlaceholder.png" alt="project description">
+            <div class = "index_projects">
+                <div class = "image_&_link element_end">
+                    <img class="overlay_image" src="images/ImagePlaceholder.png" alt="project description">
+                    <a class="button_link" href="#">Link to Project</a> 
                 </div>
-                <form style="display: inline" action="#" method="get">
-                    <button class="button_link">Link to Project</button>
-                </form>
-            </div>
-            <div class = index_projects>
-                <div class="overlay_image">
-                    <img src="images/ImagePlaceholder.png" alt="project description">
+                <div class = "image_&_link element_end">
+                    <img class="overlay_image" src="images/ImagePlaceholder.png" alt="project description">
+                    <a class="button_link" href="#">Link to Project</a> 
                 </div>
-                <form style="display: inline" action="#" method="get">
-                    <button class="button_link">Link to Project</button>
-                </form>
-            </div>
-            <div class = index_projects>
-                <div class="overlay_image">
-                    <img src="images/ImagePlaceholder.png" alt="project description">
+                <div class = "image_&_link element_end">
+                    <img class="overlay_image" src="images/ImagePlaceholder.png" alt="project description">
+                    <a class="button_link" href="#">Link to Project</a> 
                 </div>
-                <form style="display: inline" action="#" method="get">
-                    <button class="button_link">Link to Project</button>
-                </form>
             </div>
         </div>
     </section>
     <!--Footer-->
     <section class="_Footer">
-        <div>
+        <div class="Footer_link_list">
             <h3>Intranet Links</h3>
             <ul>
                 <li><a href="#">Link 1</a></li>
@@ -65,7 +63,7 @@
                 <li><a href="#">Link 3</a></li>
             </ul>
         </div>
-        <div>
+        <div class="Footer_link_list">
             <h3>Extranet Links</h3>
             <ul>
                 <li><a href="#">Link 1</a></li>

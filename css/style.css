@@ -11,8 +11,19 @@ HTML, *
 /*Class Rules*/
 .button_link
 {
-    width: 12em;
-    height: 4em;
+    /* 
+    needs:
+    sans serif font 
+    */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 3px solid yellow;
 }
 ._Overlay
 {
@@ -27,14 +38,24 @@ HTML, *
     right: 0;
     bottom: 0;
 }
+.overlay_image, #indexIntro img
+{
+    width:100%;
+    max-width: 310px;
+    /* later to be reset with the max width of landscape & max height of portrait files */
+}
 /*Body Rules*/
 body
 {
     background:green;
 }
-div:not(._Overlay)
+.element_end
 {
     margin-bottom:10px;
+}
+.section_end
+{
+    margin-bottom:30px;
 }
 section:not(._Footer)
 {
@@ -47,7 +68,36 @@ section:not(._Footer)
     width:100%;
     display:flex;
     flex-direction:column;
+    margin: auto;
 }
+/* Site Map Rules */
+.site_map_grid
+{
+    /* display:flex;
+    flex-direction: column;
+    justify-content: center; */
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6em;
+    justify-items: center;
+}
+.header_links_flex
+{
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+}
+.site_map_grid img
+{
+    grid-column: 1/span 1;
+    grid-row:2/span 1;
+    z-index:0;
+    width: 100%;
+    margin-top: 0;
+    max-width: 300px;
+    /* max width to be replaced by the size of the banner */
+}
+
+
 /* Responsive Page Layout Rules */
 /* Mobile Rules*/
 @media screen and (max-width: 750px)
@@ -56,8 +106,24 @@ section:not(._Footer)
     #indexContent
     {
         width:80%;
+        text-align: center;
     }
-
+    /*Nav Menu Rules*/
+    .nav_menu
+    {
+        position:fixed;
+        top: 10px;
+        left:50vw;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    .site_map_grid .mobile_spacer
+    {
+        display:block;
+        /* background: red; */
+        height:6.5em;
+        width: 10px;
+    }
     /*Index Page Elements*/
     #indexIntro
     {
@@ -70,5 +136,9 @@ section:not(._Footer)
         display:flex;
         flex-direction: column;
         align-items: center;
+    }
+    .Footer_link_list
+    {
+        text-align: center;
     }
 }
