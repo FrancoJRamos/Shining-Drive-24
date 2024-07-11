@@ -16,16 +16,38 @@ HTML, *
     sans serif font 
     */
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
+    /* padding: 10px 20px; */
+    width: 8em;
+    /* height: 1.5em; */
+    
     color: #fff;
     text-decoration: none;
     border: none;
     cursor: pointer;
     border-radius: 3px;
+    
+    text-align: center;
+    /* margin-top:auto;
+    margin-bottom:auto; */
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+}
+.button_border
+{
+    background-color: #007bff;
     border: 3px solid yellow;
 }
-._Overlay
+#nav_menu
+{
+    border: 1px solid red;
+    background: orange;
+}
+.border_div
+{
+    border: 1px solid orange;
+    background: rgb(137, 137, 228);       
+}   
+#Overlay
 {
     position: fixed; /* Sit on top of the page content */
     display:none;
@@ -37,6 +59,11 @@ HTML, *
     left: 0;
     right: 0;
     bottom: 0;
+}
+#Image_Placeholder
+{
+    display:none;
+    z-index: 6;
 }
 .overlay_image, #indexIntro img
 {
@@ -96,35 +123,61 @@ section:not(._Footer)
     max-width: 300px;
     /* max width to be replaced by the size of the banner */
 }
-
+/*Bio Page Rules*/
+.radio_button
+{
+    display:none;
+}
+.bio_story_button
+{
+    width:6em;
+}
 
 /* Responsive Page Layout Rules */
 /* Mobile Rules*/
 @media screen and (max-width: 750px)
 {
+    /*Class Rules*/
+    #Image_Placeholder
+    {
+        position: fixed;
+        top: 25vh;
+        left: 50vw;
+        right: 0;
+        bottom: 0;
+        transform: translateX(-50%);
+        width:90%;
+        height: auto;
+    }
     /*Grid Layout*/
-    #indexContent
+    #indexContent, #contactContent, #bioContent
     {
         width:80%;
         text-align: center;
     }
     /*Nav Menu Rules*/
-    .nav_menu
+    #nav_menu
     {
         position:fixed;
         top: 10px;
         left:50vw;
         transform: translateX(-50%);
         z-index: 2;
+        padding-top: 10px;
+        width: 80%;
+    }
+    #nav_list
+    {
+        display:none;
     }
     .site_map_grid .mobile_spacer
     {
         display:block;
         /* background: red; */
-        height:6.5em;
+        height:7.5em;
         width: 10px;
     }
-    /*Index Page Elements*/
+    /*Index Page Mobile Rules*/
     #indexIntro
     {
         display:flex;
@@ -137,6 +190,14 @@ section:not(._Footer)
         flex-direction: column;
         align-items: center;
     }
+    /*Contact Page Mobile Rules*/
+    #external_sites ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*Footer Element Rules*/
     .Footer_link_list
     {
         text-align: center;
