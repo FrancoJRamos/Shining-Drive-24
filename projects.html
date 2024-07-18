@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Gallery</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="/scripts/navMenu.js" defer></script>
+    <script src="/scripts/overlayImage.js" defer></script>
+</head>
+<body>
+    <section id="projectContent">
+         <!--Nav-->
+         <div id = "nav_menu">
+            <button id="nav_button" class="element_end">
+                <img src = "images/ImagePlaceholder-Mobile.png" alt="open navigation menu">
+            </button>
+            <!--insert list of a tag links here-->
+            <div id = "nav_list">
+                <ul>
+                    <li><a class="button_link button_border element_end" href="index.html">Home</a></li>
+                    <li><a class="button_link button_border element_end" href="projects.html">Projects</a></li>
+                    <li><a class="button_link button_border element_end" href="bio.html">Bio</a></li>
+                    <li><a class="button_link button_border element_end" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Site Map-->
+        <div class = "site_map_grid section_end">
+            <div class="mobile_spacer element_end"></div>
+            <div class="header_links_flex">
+                <h1>Header 1</h1>
+                <!--put site map extnesions here-->
+            </div>
+            <img src="images/SiteMap-Placeholder.png" alt="description of banner imagery">
+        </div>
+
+        <h2>Project Title</h2>
+        <div id="projectGrid" class="section_end">
+            <!--Hero Images-->
+            <div id="project_hero_images" class="element_end">
+                <img class="overlay_image" src="images/ImagePlaceholder.png" alt="description of hero image 1">
+                <img class="overlay_image" src="images/ImagePlaceholder.png" alt="description of hero image 2">
+                <img class="overlay_image" src="images/ImagePlaceholder.png" alt="description of hero image 3">
+            </div>
+
+            <!--Project Description-->
+            <ul id="project_info_list" class="element_end">
+                <li>[Year]</li>
+                <li>[tag value 1], [tag value 2]</li>
+                <li>[Tool 1 here], [Placeholder], [Placeholder], [Placeholder], [Placeholder]</li>
+                <li><br>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+            </ul>
+            <!--Link to Sub Pages-->
+            <div id="project_subpage_links" >
+                <a href="#" class="button_border button_link">how it was made</a>
+                <a href="#" class="button_border button_link">play in browser</a>
+            </div>
+            <!--Tag Select-->
+            <div id="project_filter_div">
+                <h2 class="element_end">Tag Select</h2>
+                <form id="project_filter_form">
+                    <input type="button" id="filter_type_00" class="interactable button_border button_form" name="temp_motion" value="temp_motion">
+                    <input type="button" id="filter_type_01" class="interactable button_border button_form" name="temp_illustration" value="temp_illustration">
+                    <input type="button" id="filter_type_02" class="interactable button_border button_form" name="temp_programming" value="temp_programming">
+                </form>    
+            </div>
+            <!--Project Select-->
+            <div id="project_select_div">
+                <h2 class="element_end">Project Select</h2>
+                <form id="project_select_form">
+                    <h3>Section 1</h3>
+                    <input type="radio" id="select_project_00" name="select_type" value="0" class="radio_button">
+                    <label for="select_project_00">
+                        <img class="interactable" src="images/ImagePlaceholder-Mobile.png" alt="select this project">
+                    </label>
+                    <h3>Section 2</h3>
+                    <input type="radio" id="select_project_01" name="select_type" value="1" class="radio_button">
+                    <label for="select_project_00">
+                        <img class="interactable" src="images/ImagePlaceholder-Mobile.png" alt="select this project">
+                    </label>
+                    <h3>Section 3</h3>
+                    <input type="radio" id="select_project_02" name="select_type" value="2" class="radio_button">
+                    <label for="select_project_00">
+                        <img class="interactable" src="images/ImagePlaceholder-Mobile.png" alt="select this project">
+                    </label>
+                </form>
+            </div>
+            
+        </div>
+        <!--Project Subpage Links-->
+        <h2 class="element_end">Full Project List</h2>
+        <ul class="section_end">
+            <li><h3>year</h3></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+        
+    </section>
+
+    <!--Footer-->
+    <section class="_Footer">
+        <div class="Footer_link_list">
+            <h3>Intranet Links</h3>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+        <div class="Footer_link_list">
+            <h3>Extranet Links</h3>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </section>
+    <!--Overlay Image-->
+    <img id="Image_Placeholder" src="images/SiteMap-Placeholder.png" alt="put project description here">
+    <!--Overlay-->
+    <div id="Overlay">
+
+    </div>
+</body>
+</html>
