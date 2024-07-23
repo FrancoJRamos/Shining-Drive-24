@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="/scripts/navMenu.js" defer></script>
     <script src="/scripts/overlayImage.js" defer></script>
+    <script src="/scripts/projectInfoDatabase.js" defer></script>
+    <script src="/scripts/projectSelect.js" defer></script>
 </head>
 <body>
     <section id="projectContent">
@@ -27,7 +29,7 @@
             </div>
         </div>
         <!--Site Map-->
-        <div class = "site_map_grid section_end">
+        <div id="site_map" class = "site_map_grid section_end">
             <div class="mobile_spacer element_end"></div>
             <div class="header_links_flex">
                 <h1>Header 1</h1>
@@ -36,13 +38,13 @@
             <img src="images/SiteMap-Placeholder.png" alt="description of banner imagery">
         </div>
 
-        <h2>Project Title</h2>
+        <h2 id="project_title">Project Title</h2>
         <div id="projectGrid" class="section_end">
             <!--Hero Images-->
             <div id="project_hero_images" class="element_end">
-                <img class="overlay_image" src="images/ImagePlaceholder.png" alt="description of hero image 1">
-                <img class="overlay_image" src="images/ImagePlaceholder.png" alt="description of hero image 2">
-                <img class="overlay_image" src="images/ImagePlaceholder.png" alt="description of hero image 3">
+                <img id="hero_image" class="overlay_image" src="images/ImagePlaceholder.png" alt="description of hero image 1">
+                <!-- <img class="overlay_image" src="images/ImagePlaceholder.png" alt="description of hero image 2">
+                <img class="overlay_image" src="images/ImagePlaceholder.png" alt="description of hero image 3"> -->
             </div>
 
             <!--Project Description-->
@@ -70,21 +72,25 @@
             <div id="project_select_div">
                 <h2 class="element_end">Project Select</h2>
                 <form id="project_select_form">
-                    <h3>Section 1</h3>
-                    <input type="radio" id="select_project_00" name="select_type" value="0" class="radio_button">
-                    <label for="select_project_00">
-                        <img class="interactable" src="images/ImagePlaceholder-Mobile.png" alt="select this project">
-                    </label>
-                    <h3>Section 2</h3>
-                    <input type="radio" id="select_project_01" name="select_type" value="1" class="radio_button">
-                    <label for="select_project_00">
-                        <img class="interactable" src="images/ImagePlaceholder-Mobile.png" alt="select this project">
-                    </label>
-                    <h3>Section 3</h3>
-                    <input type="radio" id="select_project_02" name="select_type" value="2" class="radio_button">
-                    <label for="select_project_00">
-                        <img class="interactable" src="images/ImagePlaceholder-Mobile.png" alt="select this project">
-                    </label>
+                    <h3>Programming</h3>
+                        <input type="radio" id="RocketJump" name="project_select_form" value="0" class="radio_button ">
+                        <label for="RocketJump">
+                            <img class="interactable project_button button_border" src="images/Projects/RocketJump-1.0.jpg" alt="select 'this' project">
+                        </label>
+                        <input type="radio" id="RiverRaid" name="project_select_form" value="1" class="radio_button ">
+                        <label for="RiverRaid">
+                            <img class="interactable project_button button_border" src="images/Projects/RiverRaid-1.0.jpg" alt="select 'this' project">
+                        </label>
+                    <h3>Motion</h3>
+                        <input type="radio" id="Printmaking" name="project_select_form" value="2" class="radio_button">
+                        <label for="Printmaking">
+                            <img class="interactable project_button button_border" src="images/Projects/Printmaking-1.0.jpg" alt="select this project">
+                        </label>
+                    <h3>Art</h3>
+                        <input type="radio" id="ColorStudy" name="project_select_form" value="3" class="radio_button">
+                        <label for="ColorStudy">
+                            <img class="interactable project_button button_border" src="images/Projects/ColorStudy-1.0.jpg" alt="select this project">
+                        </label>
                 </form>
             </div>
             

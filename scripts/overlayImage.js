@@ -12,19 +12,20 @@
 
 //see if you can change the z-index of a single element in the class array
 
-const overlayImages = document.getElementsByClassName("overlay_image");
+let overlayImages;
+InitializeOverlayImages();
 const placeholderImage = document.getElementById("Image_Placeholder");
 
-console.log(overlayImages);
+// console.log(overlayImages);
 
 //click on one element and get the overlay working
 for(i=0;i<overlayImages.length;i++)
 {
     overlayImages[i].addEventListener("click",function()
     {
-        //checking for the right elements
-        console.log("you have pressed the "+i+"th element");
-        console.log(this.alt);
+        //checking for the element
+        // console.log("you have pressed the "+i+"th element");
+        // console.log(this.alt);
 
         //send to placeholder
         placeholderImage.src = this.src;
@@ -47,3 +48,9 @@ overlay.addEventListener("click",function()
     //close the nav menu if its open
     if(isNavOpen)ToggleNav();
 })
+
+function InitializeOverlayImages()
+{
+    overlayImages = document.getElementsByClassName("overlay_image");
+    console.log(overlayImages.length+" items were found");
+}

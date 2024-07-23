@@ -141,7 +141,7 @@ section:not(._Footer)
     max-width: 300px;
     /* max width to be replaced by the size of the banner */
 }
-/*Bio Page Rules*/
+/*Bio Page Classes*/
 .radio_button
 {
     display:none;
@@ -150,7 +150,12 @@ section:not(._Footer)
 {
     width:6em;
 }
-
+/*Project Page Classes*/
+.project_button
+{
+    width:6em;
+    height:6em;
+}
 /* Responsive Page Layout Rules */
 /* Mobile Rules*/
 @media screen and (max-width: 750px)
@@ -236,6 +241,7 @@ section:not(._Footer)
         overflow: scroll;
         display:flex;
         flex-direction: row;
+        justify-content:space-evenly;
     }
     #project_info_list
     {
